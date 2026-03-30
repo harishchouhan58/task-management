@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://task-managements-blond.vercel.app/",
+  origin: "https://task-managements-blond.vercel.app",
   credentials: true
 }));
 app.use(express.json());
