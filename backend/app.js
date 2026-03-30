@@ -5,7 +5,10 @@ import cookieParser from 'cookie-parser';
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://task-managements-jpqnrkuj8-harishs-projects-4e071df0.vercel.app",
+  credentials: true
+}));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
